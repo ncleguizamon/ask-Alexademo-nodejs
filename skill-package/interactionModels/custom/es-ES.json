@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "curiosidades dev",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "Hola",
+                        "cómo estás",
+                        "di hola mundo",
+                        "Di hola",
+                        "Hola",
+                        "di hola mundo",
+                        "di hola"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [],
+                    "samples": [
+                        "dime algo",
+                        "dime una curiosidad espacial",
+                        "una curiosidad",
+                        "un dato del espacio",
+                        "un dato"
+                    ]
+                },
+                {
+                    "name": "GetFactByPlanet",
+                    "slots": [
+                        {
+                            "name": "planeta",
+                            "type": "tipoPlaneta"
+                        }
+                    ],
+                    "samples": [
+                        "dime un dato de {planeta}",
+                        "dime algo de {planeta}",
+                        "dime una curiosidad espacial de {planeta}",
+                        "una curiosidad de {planeta}",
+                        "un dato del espacio de {planeta}",
+                        "un dato de {planeta}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "tipoPlaneta",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "jupiter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tierra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marte",
+                                "synonyms": [
+                                    "el planeta rojo"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "venus"
+                            }
+                        }
+                    ]
+                }
+
+            ]
+        }
+    }
+  }
+  
